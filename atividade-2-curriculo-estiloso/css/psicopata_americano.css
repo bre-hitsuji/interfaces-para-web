@@ -1,0 +1,70 @@
+
+body{
+    background-color: rgb(243, 206, 211);
+}
+
+p{
+    font-family: "Sour Gummy";
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(87, 66, 77);
+}
+
+ul{
+    font-family: "Sour Gummy";
+    /* Tira o marcador padrão, deixando none */
+    list-style-type: none;
+    font-size: 18px;
+    color: rgb(87, 66, 77);
+}
+
+/* Adicionar o coração só no ul li::before, assim o <ol> continua normal */
+ul li::before{
+    content: "❤";
+    color: rgb(197, 88, 125);
+    margin-right: 5px;
+}
+
+ol {
+    /* Deixar em número romano: upper-roman e fonte */
+    list-style-type: upper-roman;
+    font-family: "Sour Gummy";
+    font-size: 18px;
+    color: rgb(87, 66, 77)
+}
+/* Mudar a cor dos números romanos e a fonte da sua escolha */
+ol li::marker {
+    color: rgb(197, 88, 125);
+    font-family: "Agbalumo";
+}
+
+dd{
+    font-family: "Sour Gummy";
+    color: rgb(87, 66, 77);
+    font-size: 18px;
+}
+
+b{
+    font-family: "Pacifico";
+    color: palevioletred;
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Agbalumo";
+    color: palevioletred;
+}
+
+h2{
+    font-family: "Agbalumo";
+    color: palevioletred;
+}
+
+.link{
+    font-family: "Agbalumo";
+}
+
+.borda{
+    /* none, dotted, dashed, solid, double, groove, inset e o outset */
+    border: 7px double rgb(199, 100, 149);
+}
