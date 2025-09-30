@@ -64,6 +64,18 @@ h2{
     font-family: "Agbalumo";
 }
 
+/* Cor padrão do link sem sublinhado */
+a {
+  color: #ce6b93;
+  text-decoration: none;
+}
+
+/* Quando o mouse passa por cima (hover) */
+a:hover {
+  color: #703655;
+  text-decoration: underline; /* aparece o sublinhado só no hover */
+}
+
 .borda{
     /* none, dotted, dashed, solid, double, groove, inset e o outset */
     border: 7px double rgb(199, 100, 149);
