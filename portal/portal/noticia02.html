@@ -1,0 +1,204 @@
+<!-- Essa tag define a linguagem e a versão dela -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Segunda Notícia</title>
+
+		<!-- Importação da web font  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+		<!-- Cria um bloco de código CSS -->
+		<style type="text/css"> 
+			img{
+				/* Define a largura do elemento */
+				width: 400px;
+			}
+			h2{
+				/* Define espaçamento entre as palavras dp texto */
+				word-spacing: 5px;
+				/* Define o espaçamento entre as letras do texto */
+				letter-spacing: 2px;
+			}
+
+			body{
+				background-color: rgb(238, 204, 229);
+			}
+
+			ul{
+				/* Define o tipo de marcador da lista: 
+				none, circle, disc, square
+				(wind+.= tem os emojis*/
+				/* list-style-type: "❤"; */
+				list-style-image: url(img/home.png);
+			}
+
+			/* Seleciona os elementos OL  */
+			ol{
+				/* Define o tipo de marcador */
+				list-style-type: upper-roman;
+				border: 4px dotted palevioletred;
+			}
+
+			/* Seleciona todos os elementos LI que estiverem dentro de um elemento OL */
+			ol li{
+				/* Define uma borda para o elemento */
+				border: 1px solid plum;
+				/* Define a posição dos marcadores, sendo dentro inside ou fora outside  */
+				list-style-position: inside;
+			}
+
+			p,li, h2{
+				font-family: chakra petch;
+				/* Define a espessura da fonte  */
+				font-weight: 400;
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+		
+		<h1 id="topo">Tech Drops</h1>
+
+		<hr>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="noticia01.html" target="_blank">
+						Primeira Notícia
+					</a>
+				</li>
+				<li>
+					<a href="#versoes">
+						Versões de Antivírus
+					</a>
+				</li>
+				<li>
+					<a href="#coracao">
+						Novo Vírus Coração Gelado
+					</a>
+				</li>
+				<li>
+					<a href="#perigo">
+						Perigos!
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<hr>
+
+		<h2>Ursinhos Carinhosos na TI</h2>
+
+		<img src="img/ursinhos-carinhosos.jpg" alt="ursos felizes juntos">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h3>Novo Antivírus vira sucesso mundial</h3>
+
+		<p style="color: purple; font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h4>Veja as versões do antivírus</h4>
+
+		<!-- ul indica o início e final da lista não ordenada -->
+		<ul id="versoes">
+			<!-- li define o início e final de cada item da lista -->
+			<li>Ursinho da Sorte Max Premium</li>
+			<li>Ursinho do Coração Free</li>
+			<li>Ursinho Amigo Gamer</li>
+			<li>Ursinho Harmonia Tester</li>
+			<li>Vovô Urso Starter</li>
+		</ul>
+
+
+		<h3 id="coracao">Novo Vírus Coração Gelado</h3>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h4>Os países mais infectados pelo novo vírus "Coração Gelado"</h4>
+
+		<!-- ol indica o início e final da lista ordenada -->
+		<ol>
+			<li>Brasil</li>
+			<li>Estados Unidos</li>
+			<li>Argentina</li>
+			<li>Grécia</li>
+		</ol>
+
+		<h3 id="perigo">Vírus maliciosos são perigosos</h3>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h4>Glossário sobre Malware</h4>
+
+		<!-- dl define o início e final de uma lista de definição/descrição -->
+		<dl>
+			<!-- dt define o início e final de um termo -->
+			<dt>Tipos de malware</dt>
+			<!-- dd define o início e final de uma descrição -->
+			<dd>Vírus</dd>
+			<dd>Trojan (Cavalo de Tróia)</dd>
+			<dd>Spyware</dd>
+
+			<dt>Formas de infecção por malware</dt>
+			<dd>Downloads suspeitos</dd>
+			<dd>Sites maliciosos</dd>
+		</dl>
+
+
+		<br><br><br>
+
+		<a href="#topo">
+			Voltar ao Topo!
+		</a>
+
+	</body>
+</html>
