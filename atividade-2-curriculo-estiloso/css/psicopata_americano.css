@@ -3,14 +3,7 @@ body{
     background-color: rgb(243, 206, 211);
 }
 
-p{
-    font-family: "Sour Gummy";
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(87, 66, 77);
-}
-
-ul{
+p, ul{
     font-family: "Sour Gummy";
     /* Tira o marcador padrão, deixando none */
     list-style-type: none;
@@ -25,7 +18,7 @@ ul li::before{
     margin-right: 5px;
 }
 
-ol {
+ol{
     /* Deixar em número romano: upper-roman e fonte */
     list-style-type: upper-roman;
     font-family: "Sour Gummy";
@@ -33,7 +26,7 @@ ol {
     color: rgb(87, 66, 77)
 }
 /* Mudar a cor dos números romanos e a fonte da sua escolha */
-ol li::marker {
+ol li::marker{
     color: rgb(197, 88, 125);
     font-family: "Agbalumo";
 }
