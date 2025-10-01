@@ -50,18 +50,9 @@ b{
     font-size: 20px;
 }
 
-h1{
+h1, h2{
     font-family: "Agbalumo";
-    color: palevioletred;
-}
-
-h2{
-    font-family: "Agbalumo";
-    color: palevioletred;
-}
-
-.link{
-    font-family: "Agbalumo";
+    color: rgb(209, 92, 129);
 }
 
 /* Cor padrão do link sem sublinhado */
@@ -76,7 +67,30 @@ a:hover {
   text-decoration: underline; /* aparece o sublinhado só no hover */
 }
 
+.link{
+    font-family: "Agbalumo";
+}
+
 .borda{
     /* none, dotted, dashed, solid, double, groove, inset e o outset */
     border: 7px double rgb(199, 100, 149);
+}
+
+#sublinhado{
+  text-decoration: underline;
+  text-decoration-color: #ff69b4; 
+  /* grossura da linha */ 
+  text-decoration-thickness: 2px;   
+}
+
+#sumido{
+  /* texto invisível */
+  color: transparent;     
+  /* transição suave */    
+  transition: color 0.3s ease; 
+}
+
+/* rosa pink quando passa o mouse */
+#sumido:hover{
+  color: #ce6b93; 
 }
