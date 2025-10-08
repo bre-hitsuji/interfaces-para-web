@@ -1,0 +1,67 @@
+label{
+    /* Block - não permite alimentos lado a lado  */
+    display: block;
+}
+
+.inquebravel{
+    /* inline-block - permite elementos lado a lado  */
+    display: inline-block;
+}
+
+span{
+    display: block;
+}
+
+form{
+    width: 45%;
+    /* display: inline-block; */
+    float: left;
+    background-color: #e0c4f0;
+    height: 580px;
+    border: 1px solid #9cda4b;
+    /* Define um espaçamento interno, entre o conteúdo do elemento e a sua borda  */
+    padding: 10px;
+    /* Define um espaçamento externo à esquerda, depois da borda do elemento */
+    margin-left: 10px;
+    /* Define um espaçamento externo superior, depois da borda do elemento */
+    margin-top: 20px;
+}
+
+#direita{
+    float: right;
+    padding-left: 20px;
+    /* Define  um espaçamento externo à esquerda, depois da borda do elemento  */
+    margin-right: 10px;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+select{
+    margin-bottom: 10px;
+}
+
+legend{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

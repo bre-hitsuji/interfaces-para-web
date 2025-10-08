@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <!-- Importação da folha de estilo -->
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
 </head>
 <body>
     <!-- Define a área de um formulário -->
@@ -16,7 +18,6 @@
             <label for="id-nome">Nome Completo: </label>
             <!-- Usar o 'required' quando quiser botar como obrigatório o campo -->
             <input type="text" name="nome" id="id-nome" autofocus required>
-            <br><br>
             <label for="id-senha">Senha: </label>
             <input type="password" name="senha" id="id-senha"> 
         </fieldset>
@@ -26,26 +27,26 @@
             <span>Selecione o sabor da borda:</span>
             <!-- Estrutura de seleção para escolha de uma opção -->
             <input type="radio" name="borda" value="sem-borda" id="sem-borda">
-            <label for="sem-borda">Sem borda</label>
+            <label class="inquebravel" for="sem-borda">Sem borda</label>
 
             <input type="radio" name="borda" value="catupiry" id="catupiry">
-            <label for="catupiry">Catupiry</label>
+            <label class="inquebravel" for="catupiry">Catupiry</label>
 
             <input type="radio" name="borda" value="chocolate" id="chocolate">
-            <label for="chocolate">Chocolate</label>
+            <label class="inquebravel" for="chocolate">Chocolate</label>
 
-            <br><br>
+
             <span>Selecione os sabores da pizza: </span>
             <input type="checkbox" name="calabresa" value="selecionado" id="calabresa">
-            <label for="calabresa"> Calabresa</label>
+            <label class="inquebravel" for="calabresa"> Calabresa</label>
 
             <input type="checkbox" name="queijo" value="selecionado" id="queijo">
-            <label for="queijo">Quatro Queijos</label>
+            <label class="inquebravel" for="queijo">Quatro Queijos</label>
 
             <input type="checkbox" name="strogonoff" value="selecionado" id="strogonoff">
-            <label for="strogonoff">Strogonoff</label>
+            <label class="inquebravel" for="strogonoff">Strogonoff</label>
 
-            <br><br>
+       
             <label for="tam">Selecione o tamanho da pizza:</label>
             <!-- Estrutura de seleção única -->
             <select name="tamanho" id="tam">
@@ -54,7 +55,7 @@
                 <option value="g">Grande</option>
                 <option value="f">Família</option>
             </select>
-            <br><br>    
+ 
 
             <label for="">Selecione uma bebida:</label>
 
@@ -72,13 +73,13 @@
                 </optgroup>
             </select>
 
-            <br><br>
-            <label for="obs">Observações: </label><br>
+            <br>
+            <label for="obs">Observações: </label>
             <textarea name="obs" id="obs" cols="30" rows="5" minlength="5"></textarea>
 
         </fieldset>
 
-        <br><br>
+        
         <!-- Botão de envio de informações do form -->
         <input type="submit" name="btn-enviar" value="Cadastrar">
         <!-- Botão que limpa os campos do formulário -->
@@ -90,47 +91,40 @@
         <!-- Passagem de dados ocultos no formulário (não aparece nada para o usuário) -->
         <input type="hidden" name="segredo" value="oculto">
 
-        <br>
+        
         <!-- Botão com imagem associada -->
         <input type="image" name="bnt-img" src="img/botao.png" style="width: 250px;">
 
     </form>
 
-    <form name="form-avancado" action="registrar.html" method="get">
+    <form name="form-avancado" id="direita" action="registrar.html" method="get">
         <!-- Campo para e-mail, com validação  -->
         <label for="email">E-mail: </label>
         <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
         
-        <br><br>
         
         <!-- Campo para URL com validação  -->
         <!-- Usar 'disabled' quando quiser desativar o campo  -->
         <label for="site">Informe seu linkedin: </label>
         <input type="url" name="site" id="site" disabled>
 
-        <br><br>
-
+        
         <!-- Campo de formulário para número  -->
         <!-- Max define o valor máximo; Min define o valor mínimo. -->
         <!-- Step define o intervalo dos valores -->
         <label for="idade">Idade: </label>
         <input type="number" name="idade" id="idade" min="20" max="100" step="10" value="30">
-        <br><br>
 
         <label for="pontos">Avalie seu pedido: </label>
         <input type="range" name="pontos" id="pontos" min="100" max="200" step="10" value="120">
         
-        <br><br>
 
         <label for="cor">Selecione sua cor favorita: </label>
         <input type="color" name="cor">
-        <br><br>
 
         <!-- Usar 'placeholder' quando quiser colocar um exemplo de como deve ser respondido -->
         <label for="cel">Número de contato: </label>
         <input type="tel" name="cel" id="cel" placeholder="(51) 99999-9999">
-
-        <br><br>
 
         <label for="data">Data de nascimento: </label>
         <input type="date" name="data" id="data">
@@ -138,12 +132,10 @@
         <label for="data-hora">Data e hora: </label>
         <input type="datetime-local" name="data-hora" id="data-hora">
 
-        <br><br>
-
         <label for="horario">Selecione o seu horário de preferência</label>
         <input type="time" name="horario" id="horario">
 
-        <br><br>
+        
 
         <label for="campo-catalogo">Selecione seu programa favorito: </label>
         <input list="catalogo" name="seriado" id="campo-catalogo">
@@ -157,10 +149,7 @@
             <option value="Trailer Park Boys">
             <option value="Banana de Pijama">
         </datalist>
-
-
-
-        <br><br>
+        
         <input type="submit" name="enviar">
         
     </form>

@@ -1,0 +1,36 @@
+
+/* Seleciona todos os elementos UL que estiverem dentro de um elemento NAV  */
+nav ul{
+    /* background-color: #a482e9; */
+    /* Remove os marcadores  */
+    list-style-type: none;
+    /* Remove o espaçamento interno da esquerda  */
+    padding-left: 0;
+    /* Define a largura */
+    width: 650px;
+    /* Define 0 de espaçamento superior e inferior. 
+    Define automaticamente o mesmo espaçamento para a direita e esquerda */
+    margin: 0 auto;
+}
+
+/* Seleciona os elementos LI que estão dentro de um UL que está dentro de um elemento NAV  */
+nav ul li{
+    /* Permite os elementos fiquem lado a lado  */
+    display: inline-block
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: inline-block;
+    /* Define a largura  */
+    width: 130px;
+    /* Define o alinhamento do texto  */
+    text-align: center;
+    color: #fff;
+    background-color: mediumpurple;
+    text-decoration: none;
+    /* Define espaçamento interno  */
+    padding: 2px 2px;
+}
+
+
